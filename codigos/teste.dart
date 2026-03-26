@@ -1,8 +1,13 @@
 import 'dart:io';
+  void main() {
+  print("Digite o ano do seu carro:");
+  int anoCarro = int.parse(stdin.readLineSync()!);
 
-void main() {
-  print("Digite seu salário atual:");
-  double salarioAtual = double.parse(stdin.readLineSync()!);
-  double aumento = salarioAtual * 0.15;
-  print("O valor do novo salário é: R\$ ${salarioAtual + aumento}");
+  if (anoCarro <= 2000) {
+    print("Carro antigo");
+  } else if (anoCarro >= 2001 && anoCarro <= 2010) {
+    print("Carro semi-novo");
+  } else {
+    print("Carro novo");
+  }
 }
