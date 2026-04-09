@@ -11,22 +11,11 @@ void limparTela() {
 }
 
 Future<void> main() async {
+  bool a = true;
+  while(a == true){
   print("------ CuidaPet ------");
   print("Digite seu nome:");
   String? nome = stdin.readLineSync()!;
-
-  bool a = true;
-  while(a == true){
-  
-  print("\nPrezado(a) $nome, seja bem-vindo(a) à nossa loja!");
-  print("Oferecemos em nossa loja produtos e serviços para seu PET. Para venda de produtos, procure o coloaborador Junior e, para serviços como banho ou tosa, procure o colaborador Neto.");
-  print("Obrigado e esperamos que tenha uma ótima experiência em nossa loja! \n");
-
-  String endereco = "Rua Tchongo, 270 - Carvalhópolis, MG";
-  String telefone = "(35) 97713-0385";
-  print("endereço: $endereco");
-  print("Telefone: $telefone \n");
-
   bool d = true;
   while(d == true){
   print("Escolha uma opção:  1 - Ver ofertas de Produtos, 2 - Ver ofertas de Serviços, 3 - Roupas em oferta, 4 - Novos serviços oferecidos, 5 - Promoção I 10% de desconto, 6 - Promoção II 20% de desconto e 7 - Sair");
